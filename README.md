@@ -16,8 +16,8 @@ Run KGDA_PSO_parameter_calibration.py
 
 # Dataset descriptions
 https://drive.google.com/drive/folders/1PxaAyVTbwsh2MDh_3LmDXm4aavhxhAU4?usp=drive_link
-1. Processed datasets:
-1.1 level-2 data
+## 1. Processed datasets:
+### 1.1 level-2 data
 output_cornBelt20299_pkl_all_separate:
 Point-level synthetic dataset of input and output of the Ecosys simulations. This is the dataset to train the KGML-DA.
 
@@ -32,7 +32,8 @@ Aggregated county-level 250m GLASS LAI. Produced by the script "PREPROCESS_extra
 
 MODIS_ET_v2:
 Aggregated county-level 500m MODIS ET. Produced by the script "PREPROCESS_extract_GLASS_LAI_MODIS_ET_yearly.py". This is the observation for DA.
-1.2 level-1 data
+
+### 1.2 level-1 data
 samplePoints:
 Time-invariant sampling points for each county. This data is used to extract the NLDAS2 weather data, which will be used by “PREPROCESS_WEATHER_extractNLDASbyPoints_v3.py”
 
@@ -44,7 +45,8 @@ CDL information of every pixels of Champaign county. You’ll need this to repro
 
 CDL_cornBelt_TIGER
 County-level CDL from 2000-2020 cropped by TIGER: US Census Counties 2018
-2. RAW data:
+
+## 2. RAW data:
 SLOPE_GPP_Champaign_17019
 30 m SLOPE GPP for Champaign County. You will need this to reproduce Fig.11
 
